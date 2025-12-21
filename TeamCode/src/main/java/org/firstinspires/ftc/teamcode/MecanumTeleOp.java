@@ -81,5 +81,4 @@ public class MecanumTeleOp extends LinearOpMode {
         double limitedChange = Math.max(-SLEW_RATE, Math.min(desiredChange, SLEW_RATE));
         motor.setPower(currentPower += limitedChange);
     }
-
 }
